@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const isGithubPages = process.env.NODE_ENV === 'production';
-const repo = 'nombre-del-repo'; // ⬅️ Reemplaza con el nombre real del repo
+const repo = 'weed-organic'; // ⬅️ Reemplaza con el nombre real del repo
 
 const nextConfig = {
   output: 'export',
