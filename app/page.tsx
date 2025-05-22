@@ -50,7 +50,7 @@ export default function Home() {
       name: "Aceite CBD",
       description:
         "Gotas de Cannabidiol de uso sublingual o tópico, con 1,000 mg de CBD. Ideal para tratar dolores crónicos, ansiedad, depresión e insomnio.",
-      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/8-si7QqBUrZCjFSPOcfm9QYdL1M7Bphs.jpeg",
+      image: "8.jpeg",
       benefits: ["Alivio del dolor", "Reduce ansiedad", "Mejora el sueño"],
       color: "from-green-500/20 to-purple-500/20 dark:from-green-500/10 dark:to-purple-500/10",
     },
@@ -59,7 +59,7 @@ export default function Home() {
       name: "Crema Corporal CBD",
       description:
         "Crema con extracto de cannabis para hidratación y cuidado de la piel. Propiedades emolientes, astringentes y tonificantes que ayudan a nutrir la piel.",
-      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/11-0CAgn5wnQMjBiBr2FWsVftsYM13pBV.jpeg",
+      image: "11.jpeg",
       benefits: ["Hidratación profunda", "Cuidado de la piel", "Efecto calmante"],
       color: "from-blue-500/20 to-green-500/20 dark:from-blue-500/10 dark:to-green-500/10",
     },
@@ -68,7 +68,7 @@ export default function Home() {
       name: "Linimento CBD",
       description:
         "Relajante muscular en gel con extracto de cannabis. Ideal para deportistas, disminuye el efecto de calambres y ayuda a restaurar el funcionamiento muscular.",
-      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/12-ZSixHYtgPfvGqrYtAkE7eZgPetuZIq.jpeg",
+      image: "12.jpeg",
       benefits: ["Relajante muscular", "Acción calmante", "Reduce inflamación"],
       color: "from-purple-500/20 to-green-500/20 dark:from-purple-500/10 dark:to-green-500/10",
     },
@@ -94,7 +94,7 @@ export default function Home() {
             className="flex items-center"
           >
             <Image
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/3-DREZ0opxMhhj4teiWpPvFKVxUyW0iC.png"
+              src="3.png"
               alt="Weed Organic Logo"
               width={180}
               height={80}
@@ -294,7 +294,7 @@ export default function Home() {
                 <div className="absolute -inset-1 bg-gradient-to-r from-green-600/30 to-purple-600/30 dark:from-green-500/20 dark:to-purple-500/20 rounded-2xl blur opacity-30 group-hover:opacity-70 transition duration-1000"></div>
                 <div className="relative bg-card rounded-2xl overflow-hidden shadow-xl">
                   <Image
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/12-ZSixHYtgPfvGqrYtAkE7eZgPetuZIq.jpeg"
+                    src="12.jpeg"
                     alt="Linimento CBD para dolor"
                     width={600}
                     height={600}
@@ -370,7 +370,7 @@ export default function Home() {
 
       {/* Parallax Section */}
       <ParallaxSection
-        imageUrl="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/5-wzM9blRqlq57IlRYcfzCuVIrbrfdNL.jpeg"
+        imageUrl="5.jpeg"
         title="¿Sabías que?"
         text="El cannabis se ha utilizado desde hace miles de años en Asia y el Medio Oriente por sus propiedades medicinales, rituales y textiles. Civilizaciones antiguas como la china y la india ya lo usaban."
       />
@@ -390,7 +390,7 @@ export default function Home() {
                 <div className="absolute -inset-1 bg-gradient-to-r from-blue-500/30 to-green-500/30 dark:from-blue-500/20 dark:to-green-500/20 rounded-2xl blur opacity-30 group-hover:opacity-70 transition duration-1000"></div>
                 <div className="relative bg-card rounded-2xl overflow-hidden shadow-xl">
                   <Image
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/11-0CAgn5wnQMjBiBr2FWsVftsYM13pBV.jpeg"
+                    src="11.jpeg"
                     alt="Crema Corporal CBD"
                     width={600}
                     height={600}
@@ -524,7 +524,7 @@ export default function Home() {
                     <div className="relative group">
                       <div className="absolute -inset-1 bg-gradient-to-r from-green-400/50 to-green-600/50 dark:from-green-400/30 dark:to-green-600/30 rounded-lg blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
                       <Image
-                        src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/10-AvqMd9npMMx4WHkBVf59SYwa6KGjIq.jpeg"
+                        src="10.jpeg"
                         alt="Instagram QR Code"
                         width={200}
                         height={200}
@@ -544,7 +544,7 @@ export default function Home() {
 
       {/* CTA Section */}
       <section className="py-20 md:py-32 bg-gradient-to-r from-primary to-primary-foreground/20 dark:from-primary/80 dark:to-primary-foreground/10 text-primary-foreground relative overflow-hidden">
-        <div className="absolute inset-0 bg-[url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/3-DREZ0opxMhhj4teiWpPvFKVxUyW0iC.png')] bg-center bg-no-repeat opacity-5 bg-contain"></div>
+        <div className="absolute inset-0 bg-[url('/3.png')] bg-center bg-no-repeat opacity-5 bg-contain"></div>
         <div className="container mx-auto px-4 text-center relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -576,12 +576,12 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="bg-muted/30 dark:bg-muted/10 text-foreground py-12 md:py-16 px-4 relative overflow-hidden">
-        <div className="absolute inset-0 bg-[url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/3-DREZ0opxMhhj4teiWpPvFKVxUyW0iC.png')] bg-center bg-no-repeat opacity-5 bg-contain"></div>
+        <div className="absolute inset-0 bg-[url('/3.png')] bg-center bg-no-repeat opacity-5 bg-contain"></div>
         <div className="container mx-auto relative z-10">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             <div>
               <Image
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/3-DREZ0opxMhhj4teiWpPvFKVxUyW0iC.png"
+                src="3.png"
                 alt="Weed Organic Logo"
                 width={180}
                 height={80}

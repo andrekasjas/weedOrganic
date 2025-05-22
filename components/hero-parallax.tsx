@@ -37,7 +37,7 @@ export function HeroParallax() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 0.05 }}
         transition={{ duration: 1.5, delay: 0.5 }}
-        className="absolute inset-0 bg-[url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/3-DREZ0opxMhhj4teiWpPvFKVxUyW0iC.png')] bg-center bg-no-repeat bg-contain"
+        className="absolute inset-0 bg-[url('/3.png')] bg-center bg-no-repeat bg-contain"
         style={{ filter: "blur(1px)" }}
       />
     </div>
