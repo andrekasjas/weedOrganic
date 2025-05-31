@@ -72,7 +72,7 @@
   }
   body {
     @apply bg-background text-foreground;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: background-color 0.5s ease, color 0.5s ease;
   }
 }
 
@@ -85,13 +85,13 @@ html {
     transform: translateY(0px) translateX(0px);
   }
   25% {
-    transform: translateY(-15px) translateX(10px);
+    transform: translateY(-20px) translateX(15px);
   }
   50% {
-    transform: translateY(0px) translateX(20px);
+    transform: translateY(0px) translateX(30px);
   }
   75% {
-    transform: translateY(15px) translateX(10px);
+    transform: translateY(20px) translateX(15px);
   }
   100% {
     transform: translateY(0px) translateX(0px);
@@ -99,5 +99,5 @@ html {
 }
 
 .animate-float {
-  animation: float 6s ease-in-out infinite;
+  animation: float 8s ease-in-out infinite;
 }

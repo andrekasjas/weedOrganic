@@ -17,21 +17,21 @@ export function ParallaxSection({ imageUrl, title, text }: ParallaxSectionProps)
     offset: ["start end", "end start"],
   })
 
-  const y = useTransform(scrollYProgress, [0, 1], [0, -100])
-  const opacity = useTransform(scrollYProgress, [0, 0.5, 1], [0, 1, 0])
-  const scale = useTransform(scrollYProgress, [0, 0.5, 1], [0.9, 1, 0.9])
+  const y = useTransform(scrollYProgress, [0, 1], [0, -50])
+  const opacity = useTransform(scrollYProgress, [0, 0.3, 0.7, 1], [0, 1, 1, 0])
+  const scale = useTransform(scrollYProgress, [0, 0.3, 0.7, 1], [0.95, 1, 1, 0.95])
 
   return (
     <section ref={ref} className="relative h-[80vh] overflow-hidden flex items-center justify-center">
-      <motion.div style={{ y: useTransform(scrollYProgress, [0, 1], [0, 50]) }} className="absolute inset-0 z-0">
+      <motion.div style={{ y: useTransform(scrollYProgress, [0, 1], [0, 30]) }} className="absolute inset-0 z-0">
         <Image src={imageUrl || "/placeholder.svg"} alt="Parallax Background" fill className="object-cover" priority />
         <div className="absolute inset-0 bg-black/50 dark:bg-black/70" />
       </motion.div>
       <motion.div style={{ y, opacity, scale }} className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
+          transition={{ duration: 1, ease: "easeOut" }}
           viewport={{ once: true }}
           className="bg-black/30 dark:bg-black/50 backdrop-blur-sm p-8 md:p-12 rounded-2xl"
         >

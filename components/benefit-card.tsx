@@ -32,12 +32,12 @@ export function BenefitCard({ icon, title, description, delay }: BenefitCardProp
 
   return (
     <motion.div
-      initial={{ opacity: 0, y: 20 }}
+      initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5, delay }}
+      transition={{ duration: 0.8, delay, ease: "easeOut" }}
       viewport={{ once: true, margin: "-100px" }}
-      whileHover={{ y: -5, transition: { duration: 0.2 } }}
-      className="bg-card/80 backdrop-blur-sm rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-300 border border-border"
+      whileHover={{ y: -8, transition: { duration: 0.3, ease: "easeOut" } }}
+      className="bg-card/80 backdrop-blur-sm rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-500 border border-border"
     >
       <div className="bg-gradient-to-br from-primary/5 to-primary/10 w-16 h-16 rounded-full flex items-center justify-center mb-4 shadow-inner">
         {getIcon()}

@@ -3,13 +3,14 @@ import "./globals.css"
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import { ThemeProvider } from "@/components/theme-provider"
+import { LanguageProvider } from "@/contexts/language-context"
 
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: "Weed Organic - Productos de CBD",
   description: "Productos naturales a base de cannabis CBD para el cuidado y bienestar de tu cuerpo.",
-    generator: 'v0.dev'
+  generator: "v0.dev",
 }
 
 export default function RootLayout({
@@ -21,7 +22,7 @@ export default function RootLayout({
     <html lang="es" className="scroll-smooth" suppressHydrationWarning>
       <body className={inter.className}>
         <ThemeProvider defaultTheme="light" storageKey="weed-organic-theme">
-          {children}
+          <LanguageProvider>{children}</LanguageProvider>
         </ThemeProvider>
       </body>
     </html>

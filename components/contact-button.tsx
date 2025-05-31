@@ -15,9 +15,10 @@ export function ContactButton({ href, icon, text }: ContactButtonProps) {
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      whileHover={{ scale: 1.05 }}
+      whileHover={{ scale: 1.05, y: -2 }}
       whileTap={{ scale: 0.95 }}
-      className="flex items-center justify-center gap-2 bg-gradient-to-r from-primary to-primary/90 hover:from-primary/90 hover:to-primary/80 text-primary-foreground px-6 py-3 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl"
+      transition={{ duration: 0.3, ease: "easeOut" }}
+      className="flex items-center justify-center gap-2 bg-gradient-to-r from-primary to-primary/90 hover:from-primary/90 hover:to-primary/80 text-primary-foreground px-6 py-3 rounded-full transition-all duration-500 shadow-lg hover:shadow-xl"
     >
       {icon}
       <span>{text}</span>
